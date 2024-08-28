@@ -1,21 +1,108 @@
-@import url("https://fonts.googleapis.com/css2?family=Neucha&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*
+My color scheme is 
+#A5B4FC
+//#4845D2
+*/
 
-.App {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
+
+/*THIS IS THE STYLING FOR THE NAVIGATION BAR*/
+.navbar {
   align-items: center;
-  background-color: #2f74c0;
-  font-family: "Neucha", cursive;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  height: 70px;
+}
+ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+ul li {
+  list-style: none;
+  margin: 20px;
 }
 
-.heading {
-  text-transform: uppercase;
-  font-size: 40px;
-  margin: 30px 0;
+ul li a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: black;
+  font-family: "DM Serif";
+  font-weight: 1000;
+  transition: 0.8s ease-in-out;
+}
+
+ul li a:hover {
+  text-decoration: underline 4px;
+  color: #4845d2;
+  transform: scale(0.5);
+}
+
+.login-btn {
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  font-family: "DM Serif";
+  font-size: 20px;
+  font-weight: 1000;
+}
+.login-btn:hover {
+  width: 80px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #a5b4fc;
+  transition: 0.5s ease-in-out;
+}
+
+.login-btn:active {
+}
+
+.signup-btn {
+  width: 140px;
   color: white;
-  z-index: 1;
+  height: 50px;
+  outline: 0;
+  border: 0;
+  font-family: "DM Serif";
+  font-size: 20px;
+  font-weight: 1000;
+  border-radius: 10px;
+  background-color: #4845d2;
+}
+
+.signup-btn:hover {
+}
+
+/*<<<<<<<<<<< END OF NAVBAR STYLING>>>>>>>>>>>*/
+/*<<<<<<<<<<< BODY STYLING>>>>>>>>>>>*/
+.HomeBody h1 {
+  font-size: 30px;
   text-align: center;
+}
+
+.HomeBody h2 {
+  text-align: center;
+}
+
+.signup-invite {
+  background-color: #4845d2;
+  color: white;
+  font-family: "DM Serif";
+  border: 0px;
+  outline: 0px;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 40px;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+/*<<<<<<<<<<< END OF BODY STYLING>>>>>>>>>>>*/
+/*<<<<<<<<<<< FOOTER STYLING>>>>>>>>>>>*/
+footer {
+  position-anchor: 0px;
 }
